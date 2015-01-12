@@ -13,11 +13,12 @@ class DeckOfCards
 public:
     static const int numberOfCards = 52;
     static const int faces = 13;
+    static const int suits = 4;
 
     DeckOfCards();
     void shuffle();
     void deal() const;
 
 private:
-    vector<char> deck;
+    vector< Card > deck;
 }; //end class DeckOfCards
